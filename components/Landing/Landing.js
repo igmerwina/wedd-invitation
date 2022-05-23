@@ -1,12 +1,8 @@
-import {motion} from "framer-motion";
 import Image from "next/image";
-import Bunga from '../../assets/bunga.png'
 import {animated, useSpring} from "react-spring";
 import MaskTop from "../../assets/mask.png";
 
-export default function Hero({
-                                 guest
-                             }) {
+export default function Hero({ guest }) {
     const fade = useSpring({
         from: {opacity: 0, y: 1000},
         to:
@@ -18,16 +14,13 @@ export default function Hero({
             <div className={"bg-hero bg-cover bg-top"}>
                 <div className={"text-center opacity-100"}>
                     <div className={"md:py-10 object-left-top"}>
-                        <Image src={Bunga} width={512} height={282}/>
+                        <p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
                     </div>
                     <animated.div style={fade}>
-                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The
-                            Wedding Of</h1>
-                        <h1
-                            className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}>Rifki
-                            & Novia</h1>
+                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The Wedding Of <br/> Erwin & Iin</h1>
+                        <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}></h1>
                     </animated.div>
-                    <p className={"text-white"}>Minggu. 5 Desember 2021</p>
+                    <p className={"text-white"}>Minggu. 32 November 2022</p>
                     {/*<Timer/>*/}
                     <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                     <br/>

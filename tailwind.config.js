@@ -59,14 +59,16 @@ module.exports = {
                     "500": "#c48410",
                     "550": "#a45c5c",
                     "600": "#ff8282",
-                    "650" : "#EEEEEE"
+                    "650": "#EEEEEE",
+                    "700": "#A48120",
+                    "750": "#A4815B"
                 },
                 "blackContent": "#222222"
             },
             backgroundImage: {
                 "invited": `url(/heronew.webp)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url(/footer1.webp)`
+                "footer": `url(/footernew.jpg)`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -95,12 +97,10 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({
-                             addUtilities
-                         }) {
+        plugin(function ({ addUtilities }) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/hero5.webp)",
+                    "background-image": "url(/cover.jpg)",
                 }
             }
             addUtilities(utilities);

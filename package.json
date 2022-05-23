@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ngrok": "ngrok http 3000"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -14,14 +15,16 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-spring": "^9.2.4",
-    "sweetalert2": "^11.1.9"
+    "react-spring": "^9.4.5",
+    "sql.js": "^1.6.2",
+    "sweetalert2": "^11.4.15"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.4.7",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "postcss": "^8.3.8",
-    "tailwindcss": "^2.2.16"
+    "ngrok": "^4.3.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^2.2.19"
   }
 }
