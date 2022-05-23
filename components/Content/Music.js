@@ -28,9 +28,6 @@ const Music = ({url}) => {
     const [playing, toggle] = useAudio(url);
 
     return (
-        // <div>
-        //     <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
-        // </div>
         <>
             <div className="items-end fixed z-50"
             >
@@ -65,7 +62,6 @@ const Music = ({url}) => {
                 </div>
 
             </div>
-            {/*<div className="opacity-25 fixed inset-0 z-40 bg-black"></div>*/}
         </>
     );
 };

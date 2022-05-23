@@ -2,14 +2,14 @@ import {useEffect, useState} from "react";
 
 
 export default function Timer() {
-    const [partyTime, setPartyTime] = useState(false);
+    const [setPartyTime] = useState(false);
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
-        const target = new Date("12/4/2021 23:59:59");
+        const target = new Date("12/12/2023 23:59:59");
 
         const interval = setInterval(() => {
             const now = new Date();

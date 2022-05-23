@@ -9,9 +9,7 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import Swal from "sweetalert2";
 
-export default function Wish({
-                                 guest
-                             }) {
+export default function Wish({ guest }) {
     const [listdoa, setDoa] = useState([])
     const [valueKirim, setValue] = useState({
         "nama": "",
@@ -102,7 +100,6 @@ export default function Wish({
                         <input type="text"
                                placeholder="Nama.."
                                value={guest}
-                            // onChange={(e) => getValue('nama', e.target.value)}
                                className={"text-2xl appearance-none font-mono border-none bg-transparent " +
                                "justify-center leading-tight focus:outline-none text-black capitalize mb-2"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
@@ -150,7 +147,7 @@ export default function Wish({
                         </div>
                         <br/>
                         <button
-                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded"
+                            className="bg-color-pallete-750 hover:bg-color-pallete-700 text-white font-bold py-2 px-4 rounded"
                             onClick={kirimPesan}
                         >
                             <p className={"flex"}>
